@@ -18,15 +18,12 @@ namespace Blog.Data.Mapping
            this.Property(s => s.ID).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
            this.Property(s => s.UserName).IsRequired().HasColumnType("nvarchar").HasMaxLength(50);
            this.Property(s => s.Password).IsRequired().HasColumnType("nvarchar").HasMaxLength(50);
-           this.Property(s => s.Age).IsRequired();
            this.Property(s => s.Email).IsRequired().HasColumnType("nvarchar").HasMaxLength(50);
            this.Property(s => s.CreatedDate).IsRequired();
-           this.Property(s => s.Hobby).HasColumnType("nvarchar").HasMaxLength(50).IsOptional();
            this.Property(s => s.IP).HasColumnType("nvarchar").HasMaxLength(50).IsOptional();
            this.Property(s => s.ModifiedDate).IsOptional();
-           this.Property(s => s.QQ).HasColumnType("nvarchar").HasMaxLength(25).IsOptional();
-           this.Property(s => s.Sex).HasColumnType("char(1)").IsRequired();
-           this.Property(s => s.Telephone).HasColumnType("nvarchar").HasMaxLength(15).IsRequired();
+        
+        
 
 
 

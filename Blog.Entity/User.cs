@@ -11,7 +11,6 @@ namespace Blog.Entity
     /// </summary>
     public class User:BaseEntity
     {
-       
         /// <summary>
         /// 用户名
         /// </summary>
@@ -28,41 +27,14 @@ namespace Blog.Entity
         public string Email { get; set; }
 
         /// <summary>
-        /// 性别
+        /// 导航属性----文章实体
         /// </summary>
-        public string Sex { get; set; }
+        public virtual ICollection<Article> Articles { get; set; }
 
         /// <summary>
-        /// 年龄
+        ///导航属性---用户详情实体
         /// </summary>
-        public int Age { get; set; }
-
-        /// <summary>
-        /// 手机号码
-        /// </summary>
-        public string Telephone { get; set; }
-
-        /// <summary>
-        /// QQ
-        /// </summary>
-        public string QQ { get; set; }
-
-        /// <summary>
-        /// 微信号码
-        /// </summary>
-        public string WebChat { get; set; }
-
-        /// <summary>
-        /// 兴趣爱好
-        /// </summary>
-        public string Hobby { get; set; }
-
-        /// <summary>
-        /// 导航属性--文章实体
-        /// </summary>
-        public ICollection<Article> Article { get; set; }
-
-        
+        public virtual  UserInfo UserInfo { get; set; }
 
     }
 }

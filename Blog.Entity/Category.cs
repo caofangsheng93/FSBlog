@@ -5,6 +5,9 @@ using System.Text;
 
 namespace Blog.Entity
 {
+    /// <summary>
+    /// 文章文类实体
+    /// </summary>
    public class Category:BaseEntity
     {
        /// <summary>
