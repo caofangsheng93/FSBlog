@@ -49,7 +49,7 @@ namespace Blog.Entity
         /// <summary>
         /// 用户图像
         /// </summary>
-        public string Image { get; set; }
+        public string UserImage { get; set; }
 
         /// <summary>
         /// 导航属性--用户实体
