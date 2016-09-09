@@ -51,11 +51,6 @@ namespace Blog.Entity
         /// </summary>
         public string Image { get; set; }
 
-       /// <summary>
-       /// 家乡
-       /// </summary>
-        public string HomeTown { get; set; }
-
         /// <summary>
         /// 导航属性--用户实体
         /// </summary>

@@ -16,14 +16,9 @@ namespace Blog.Entity
        public string CategoryName { get; set; }
 
        /// <summary>
-       /// 文章编号
-       /// </summary>
-       public int ArticleId { get; set; }
-
-       /// <summary>
        /// 导航属性
        /// </summary>
-       public ICollection<Article> Article { get; set; }
+       public virtual ICollection<Article> Article { get; set; }
 
 
     }

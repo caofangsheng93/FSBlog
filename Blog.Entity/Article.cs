@@ -22,27 +22,24 @@ namespace Blog.Entity
        public string Content { get; set; }
 
        /// <summary>
-       /// 分类ID
+       /// 文章链接
        /// </summary>
-       public int CategoryId { get; set; }
+       public string ArticleUrl { get; set; }
 
        /// <summary>
-       /// 作者编号
+       /// 作者编号【一个用户有多篇文章，外键在多的一方实体上】
        /// </summary>
        public int UserId { get; set; }
 
        /// <summary>
-       /// 导航属性--User
+       /// 导航属性--User【用户和文章之间一对多关系】
        /// </summary>
        public virtual User User { get; set; }
 
        /// <summary>
-       /// 导航属性--分类
+       /// 导航属性--分类【文章和分类之间多对多关系】
        /// </summary>
        public virtual ICollection<Category> Category { get; set; }
-
-
-
 
     }
 }
