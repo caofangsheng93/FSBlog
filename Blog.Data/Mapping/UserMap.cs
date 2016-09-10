@@ -15,19 +15,21 @@ namespace Blog.Data.Mapping
        {
            //配置主键
            this.HasKey(s => s.ID);
+
+           //配置自动增长列
            this.Property(s => s.ID).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+
+           //配置列
            this.Property(s => s.UserName).IsRequired().HasColumnType("nvarchar").HasMaxLength(50);
            this.Property(s => s.Password).IsRequired().HasColumnType("nvarchar").HasMaxLength(50);
            this.Property(s => s.Email).IsRequired().HasColumnType("nvarchar").HasMaxLength(50);
            this.Property(s => s.CreatedDate).IsRequired();
+           this.Property(s => s.IsDelete).IsOptional();
            this.Property(s => s.IP).HasColumnType("nvarchar").HasMaxLength(50).IsOptional();
            this.Property(s => s.ModifiedDate).IsOptional();
-        
-        
 
-
-
-
+           //配置表名
+           this.ToTable("User");
        }
     }
 }
