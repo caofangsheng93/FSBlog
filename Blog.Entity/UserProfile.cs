@@ -9,7 +9,7 @@ namespace Blog.Entity
     /// <summary>
     /// 用户详情实体
     /// </summary>
-   public class UserInfo:BaseEntity
+   public class UserProfile:BaseEntity
     {
         /// <summary>
         /// 姓
@@ -37,7 +37,7 @@ namespace Blog.Entity
         public string QQ { get; set; }
 
         /// <summary>
-        /// 微信号码
+        /// 微信号
         /// </summary>
         public string WeChat { get; set; }
 

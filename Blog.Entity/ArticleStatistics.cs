@@ -17,7 +17,7 @@ namespace Blog.Entity
        public int ReadNumber { get; set; }
 
        /// <summary>
-       /// 文章编号
+       /// 文章编号--【外键在多的一方实体上】
        /// </summary>
        public int ArticleId { get; set; }
 

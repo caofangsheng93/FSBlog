@@ -57,14 +57,20 @@ namespace Blog.Entity
        public virtual ICollection<ArticleCategory> ArticleCategories { get; set; }
 
        /// <summary>
+       /// 导航属性--评论【评论和文章之间一对多关系】
+       /// </summary>
+       public virtual ICollection<ArticleComment> ArticleComments { get; set; }
+
+       /// <summary>
        ///  导航属性--标签【文章和标签之间多对多关系】
        /// </summary>
        public virtual ICollection<ArticleTags> ArticleTags { get; set; }
 
        /// <summary>
-       /// 导航属性--评论【评论和文章之间一对多关系】
+       /// 导航属性--文章阅读统计【阅读统计和文章之间是一对多的关系】
        /// </summary>
-       public virtual ICollection<ArticleComment> ArticleComments { get; set; }
+       public virtual ICollection<ArticleStatistics> ArticleStatistics { get; set; }
+
 
     }
 }

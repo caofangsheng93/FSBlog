@@ -27,14 +27,19 @@ namespace Blog.Entity
         public string Email { get; set; }
 
         /// <summary>
-        /// 导航属性----文章实体
+        /// 导航属性----文章实体【一个用户可以写多篇文章】
         /// </summary>
         public virtual ICollection<Article> Articles { get; set; }
 
         /// <summary>
-        ///导航属性---用户详情实体
+        ///导航属性---用户详情实体【一个用户只能有一个用户详情】
         /// </summary>
-        public virtual  UserInfo UserInfo { get; set; }
+        public virtual UserProfile UserProfile { get; set; }
+
+        /// <summary>
+        /// 导航属性--评论实体【一个用户可以有很多评论】
+        /// </summary>
+        public virtual ICollection<ArticleComment> ArticleComments { get; set; }
 
     }
 }

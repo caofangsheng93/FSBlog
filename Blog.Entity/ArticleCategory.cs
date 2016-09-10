@@ -16,7 +16,12 @@ namespace Blog.Entity
        public string CategoryName { get; set; }
 
        /// <summary>
-       /// 导航属性
+       /// 分类备注
+       /// </summary>
+       public string CategoryRemark { get; set; }
+
+       /// <summary>
+       /// 导航属性--文章实体【文章和分类之间多对多】
        /// </summary>
        public virtual ICollection<Article> Article { get; set; }
 
