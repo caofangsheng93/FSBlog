@@ -8,7 +8,7 @@ namespace Blog.Entity
     /// <summary>
     /// 文章文类实体
     /// </summary>
-   public class Category:BaseEntity
+   public class ArticleCategory:BaseEntity
     {
        /// <summary>
        /// 分类名称

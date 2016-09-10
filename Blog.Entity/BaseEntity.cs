@@ -27,6 +27,11 @@ namespace Blog.Entity
        public DateTime ModifiedDate { get; set; }
 
        /// <summary>
+       /// 是否删除
+       /// </summary>
+       public bool IsDelete { get; set; }
+
+       /// <summary>
        /// IP地址
        /// </summary>
        public string IP { get; set; }

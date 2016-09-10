@@ -51,6 +51,11 @@ namespace Blog.Entity
         /// </summary>
         public string UserImage { get; set; }
 
+       /// <summary>
+       /// 是否锁定
+       /// </summary>
+        public bool IsLock { get; set; }
+
         /// <summary>
         /// 导航属性--用户实体
         /// </summary>
